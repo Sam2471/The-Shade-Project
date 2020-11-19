@@ -11,6 +11,7 @@ public class Door : MonoBehaviour
 
     public float smooth = 2f; // speed of rotation 
 
+    
     private AudioSource doorsource;
     public AudioClip opensound;
 
@@ -32,27 +33,24 @@ public class Door : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        
         {
-            open = !open;
 
-            if (doorsource != null)
+
+            if (open)
             {
-                doorsource.PlayOneShot(opensound);
+                Quaternion targetRotationOpen = Quaternion.Euler(0, dooropenangle, 0);
+                transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotationOpen, smooth * Time.deltaTime);
+
+                
             }
 
-        }
-
-        if (open == true)
-        {
-            Quaternion targetRotationOpen = Quaternion.Euler(0, dooropenangle, 0);
-            transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotationOpen, smooth * Time.deltaTime);
-        }
-
-        else
-        {
-            Quaternion targetRotationClosed = Quaternion.Euler(0, doorcloseangle, 0);
-            transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotationClosed, smooth * Time.deltaTime);
+            else
+            {
+                Quaternion targetRotationClosed = Quaternion.Euler(0, doorcloseangle, 0);
+                transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotationClosed, smooth * Time.deltaTime);
+                
+            }
         }
     }
 }
