@@ -4,38 +4,24 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public bool open = false;
+    public static bool open = false;
 
     public float dooropenangle = 90f;
     public float doorcloseangle = 0f;
 
+    public GameObject maindoor;
+
     public float smooth = 2f; // speed of rotation 
-
-    
-    private AudioSource doorsource;
-    public AudioClip opensound;
-
-    public void Start()
-    {
-        doorsource = GetComponent<AudioSource>();
-    }
 
     public void ChangeDoorState()
     {
         open = !open;
-
-        if (doorsource != null)
-        {
-            doorsource.PlayOneShot(opensound);
-        }
     }
     // Update is called once per frame
 
     void Update()
-    {
-        
+    {       
         {
-
 
             if (open)
             {
