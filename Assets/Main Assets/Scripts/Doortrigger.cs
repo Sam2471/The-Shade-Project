@@ -6,7 +6,8 @@ public class Doortrigger : MonoBehaviour
 {
     public bool Canopen = false;
     public Collider doortrigger;
-    public bool test = false;
+    public static bool test = false;
+    public bool testistrue = false;
 
     private AudioSource doorsource;
     public AudioClip opensound;
@@ -14,6 +15,7 @@ public class Doortrigger : MonoBehaviour
     public void Start()
     {
         doorsource = GetComponent<AudioSource>();
+        
     }
 
     public void OnTriggerEnter(Collider doortrigger)
@@ -34,15 +36,14 @@ public class Doortrigger : MonoBehaviour
     } 
         private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && Canopen == true)
+        if (Canopen == true)
         {
-            test = true;
-            Door.open = !Door.open;
-            if (doorsource != null)
+            Door.canopen = true;
+            //Door.open = !Door.open;
+            if (test == true)
             {
-                doorsource.PlayOneShot(opensound);
+                testistrue = true;
             }
-            
 
         }
 

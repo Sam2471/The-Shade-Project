@@ -503,9 +503,9 @@ GameObject:
   m_Component:
   - component: {fileID: 31924771}
   - component: {fileID: 31924772}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DoorO1
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -538,6 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb53678ffa2f190418ae2938a0d05a7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  open: 0
   dooropenangle: 90
   doorcloseangle: 0
   maindoor: {fileID: 31924770}
@@ -955,7 +956,7 @@ GameObject:
   - component: {fileID: 80388586}
   - component: {fileID: 80388585}
   - component: {fileID: 80388589}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Triggfront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -990,7 +991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Canopen: 0
   doortrigger: {fileID: 80388586}
-  test: 0
+  testistrue: 0
   opensound: {fileID: 8300000, guid: 96b078f2db266e74bb9fdcad119889e5, type: 3}
 --- !u!65 &80388586
 BoxCollider:
@@ -1799,7 +1800,7 @@ GameObject:
   - component: {fileID: 165749425}
   - component: {fileID: 165749428}
   - component: {fileID: 165749429}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Triggfront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1894,7 +1895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Canopen: 0
   doortrigger: {fileID: 165749425}
-  test: 0
+  testistrue: 0
   opensound: {fileID: 8300000, guid: 96b078f2db266e74bb9fdcad119889e5, type: 3}
 --- !u!82 &165749429
 AudioSource:
@@ -2885,6 +2886,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: nob (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f932ab9891da5cc49887f172cd86fde1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f932ab9891da5cc49887f172cd86fde1, type: 3}
 --- !u!4 &258905821 stripped
@@ -3258,6 +3264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nob
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f932ab9891da5cc49887f172cd86fde1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f932ab9891da5cc49887f172cd86fde1, type: 3}
@@ -3725,6 +3736,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nob
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f932ab9891da5cc49887f172cd86fde1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f932ab9891da5cc49887f172cd86fde1, type: 3}
@@ -4373,6 +4389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nob (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f932ab9891da5cc49887f172cd86fde1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f932ab9891da5cc49887f172cd86fde1, type: 3}
@@ -5298,7 +5319,7 @@ GameObject:
   - component: {fileID: 476969010}
   - component: {fileID: 476969009}
   - component: {fileID: 476969013}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Triggfront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5333,7 +5354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Canopen: 0
   doortrigger: {fileID: 476969010}
-  test: 0
+  testistrue: 0
   opensound: {fileID: 8300000, guid: 96b078f2db266e74bb9fdcad119889e5, type: 3}
 --- !u!65 &476969010
 BoxCollider:
@@ -5991,6 +6012,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nob
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f932ab9891da5cc49887f172cd86fde1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f932ab9891da5cc49887f172cd86fde1, type: 3}
@@ -15991,6 +16017,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548137912}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1553953902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1168626742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1553953903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553953902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff197bdb400257d4a8ffe3c21983d081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactbutton: Interact
+  interactdistance: 3
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  interacticon: {fileID: 0}
+  interacting: 0
 --- !u!1 &1554198165
 GameObject:
   m_ObjectHideFlags: 0
@@ -18717,7 +18768,7 @@ GameObject:
   - component: {fileID: 1795619808}
   - component: {fileID: 1795619807}
   - component: {fileID: 1795619806}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Door (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18810,9 +18861,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1800382564}
   - component: {fileID: 1800382563}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Door03
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18829,9 +18880,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb53678ffa2f190418ae2938a0d05a7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  open: 0
   dooropenangle: 90
   doorcloseangle: 0
-  maindoor: {fileID: 0}
+  maindoor: {fileID: 1800382561}
   smooth: 2
 --- !u!4 &1800382564
 Transform:
@@ -19141,7 +19193,7 @@ GameObject:
   - component: {fileID: 1845127686}
   - component: {fileID: 1845127685}
   - component: {fileID: 1845127684}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Door (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21267,7 +21319,7 @@ GameObject:
   - component: {fileID: 2061349481}
   - component: {fileID: 2061349480}
   - component: {fileID: 2061349479}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Door (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21360,9 +21412,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2076824258}
   - component: {fileID: 2076824256}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Door02
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21379,6 +21431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb53678ffa2f190418ae2938a0d05a7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  open: 0
   dooropenangle: 90
   doorcloseangle: 0
   maindoor: {fileID: 2076824255}
@@ -21800,6 +21853,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: nob (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f932ab9891da5cc49887f172cd86fde1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f932ab9891da5cc49887f172cd86fde1, type: 3}
