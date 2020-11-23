@@ -8,6 +8,7 @@ public class Doortrigger : MonoBehaviour
     public Collider doortrigger;
     public static bool test = false;
     public bool testistrue = false;
+    public Door door;
 
     private AudioSource doorsource;
     public AudioClip opensound;
@@ -38,7 +39,7 @@ public class Doortrigger : MonoBehaviour
     {
         if (Canopen == true)
         {
-            Door.canopen = true;
+            door.canopen = true;
             //Door.open = !Door.open;
             if (test == true)
             {

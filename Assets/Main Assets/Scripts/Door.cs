@@ -5,20 +5,16 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     public bool open = false;
-    public static bool canopen = false;
+    public bool canopen = false;
 
     public float dooropenangle = 90f;
     public float doorcloseangle = 0f;
-
-    public GameObject maindoor;
 
     public float smooth = 2f; // speed of rotation 
 
     public void ChangeDoorState()
     {
-        
         open = !open;
-        
     }
     // Update is called once per frame
 
@@ -26,11 +22,9 @@ public class Door : MonoBehaviour
     {       
         {
 
-            //if (canopen == true)
+            if (canopen == true && Input.GetKeyDown(KeyCode.E))
             {
-
-               // ChangeDoorState();
-
+                ChangeDoorState();             
             }
 
             if (open)

@@ -541,7 +541,6 @@ MonoBehaviour:
   open: 0
   dooropenangle: 90
   doorcloseangle: 0
-  maindoor: {fileID: 31924770}
   smooth: 2
 --- !u!1 &38271593
 GameObject:
@@ -992,6 +991,7 @@ MonoBehaviour:
   Canopen: 0
   doortrigger: {fileID: 80388586}
   testistrue: 0
+  door: {fileID: 1800382563}
   opensound: {fileID: 8300000, guid: 96b078f2db266e74bb9fdcad119889e5, type: 3}
 --- !u!65 &80388586
 BoxCollider:
@@ -1896,6 +1896,7 @@ MonoBehaviour:
   Canopen: 0
   doortrigger: {fileID: 165749425}
   testistrue: 0
+  door: {fileID: 31924772}
   opensound: {fileID: 8300000, guid: 96b078f2db266e74bb9fdcad119889e5, type: 3}
 --- !u!82 &165749429
 AudioSource:
@@ -5355,6 +5356,7 @@ MonoBehaviour:
   Canopen: 0
   doortrigger: {fileID: 476969010}
   testistrue: 0
+  door: {fileID: 2076824256}
   opensound: {fileID: 8300000, guid: 96b078f2db266e74bb9fdcad119889e5, type: 3}
 --- !u!65 &476969010
 BoxCollider:
@@ -18883,7 +18885,6 @@ MonoBehaviour:
   open: 0
   dooropenangle: 90
   doorcloseangle: 0
-  maindoor: {fileID: 1800382561}
   smooth: 2
 --- !u!4 &1800382564
 Transform:
@@ -21434,7 +21435,6 @@ MonoBehaviour:
   open: 0
   dooropenangle: 90
   doorcloseangle: 0
-  maindoor: {fileID: 2076824255}
   smooth: 2
 --- !u!4 &2076824258
 Transform:
