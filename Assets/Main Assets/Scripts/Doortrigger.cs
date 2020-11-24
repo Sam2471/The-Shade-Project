@@ -10,15 +10,6 @@ public class Doortrigger : MonoBehaviour
     public bool testistrue = false;
     public Door door;
 
-    private AudioSource doorsource;
-    public AudioClip opensound;
-
-    public void Start()
-    {
-        doorsource = GetComponent<AudioSource>();
-        
-    }
-
     public void OnTriggerEnter(Collider doortrigger)
     {
         if (doortrigger.CompareTag("Player"))

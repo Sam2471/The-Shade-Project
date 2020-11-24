@@ -10,18 +10,30 @@ public class Door : MonoBehaviour
     public float dooropenangle = 90f;
     public float doorcloseangle = 0f;
 
+    private AudioSource doorsource;
+    public AudioClip opensound;
+
     public float smooth = 2f; // speed of rotation 
+
+    public void Start()
+    {
+        doorsource = GetComponent<AudioSource>();
+    }
 
     public void ChangeDoorState()
     {
         open = !open;
+
+        if (doorsource != null)
+        {
+            doorsource.PlayOneShot(opensound);
+        }
     }
     // Update is called once per frame
 
     void Update()
     {       
         {
-
             if (canopen == true && Input.GetKeyDown(KeyCode.E))
             {
                 ChangeDoorState();             
