@@ -5,10 +5,11 @@ using UnityEngine;
 public class Doortrigger : MonoBehaviour
 {
     public bool Canopen = false;
-    public Collider doortrigger;
     public static bool test = false;
     public bool testistrue = false;
+
     public Door door;
+    public Collider doortrigger;
 
     public void OnTriggerEnter(Collider doortrigger)
     {
