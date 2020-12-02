@@ -6,7 +6,7 @@ public class CueTrigger : MonoBehaviour
 {
     public AudioSource thundersource;
     public AudioClip thunder;
-    private bool hasplayedthunder;
+    private bool hasplayedthunder = false;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && hasplayedthunder == false)
