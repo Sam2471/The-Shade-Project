@@ -4606,7 +4606,7 @@ GameObject:
   - component: {fileID: 273278965}
   - component: {fileID: 273278964}
   - component: {fileID: 273278963}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Half Wall02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10254,7 +10254,7 @@ GameObject:
   - component: {fileID: 584662737}
   - component: {fileID: 584662736}
   - component: {fileID: 584662735}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Corner Wall01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12230,7 +12230,7 @@ GameObject:
   - component: {fileID: 703174493}
   - component: {fileID: 703174492}
   - component: {fileID: 703174491}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Wall '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13132,7 +13132,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764441412}
   m_LocalRotation: {x: 0.73174703, y: -0.04708453, z: 0.5614862, w: 0.38348758}
-  m_LocalPosition: {x: -6.87, y: -0.79260206, z: -112.75}
+  m_LocalPosition: {x: -6.85, y: -0.79, z: -112.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 485915504}
@@ -13168,7 +13168,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
   m_Range: 110
-  m_SpotAngle: 85
+  m_SpotAngle: 58.2
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -13203,7 +13203,7 @@ Light:
   m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 823
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -13448,7 +13448,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
