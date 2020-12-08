@@ -9,6 +9,9 @@ public class Flashlight : MonoBehaviour
     public AudioClip toggleon;
     public AudioClip toggleoff;
 
+    public Flicker flick;
+    public bool canflick = false;
+
     public static bool canturnon = true;
     public static bool wason;
 
@@ -16,12 +19,22 @@ public class Flashlight : MonoBehaviour
    
     void Start()
     {
+        flick.enabled = false;
         isactive = true;
     }
 
 
     void Update()
     {
+        if (canflick == true)
+        {
+            flick.enabled = true;
+        }
+        else
+        {
+            flick.enabled = false;
+        }
+
         if (canturnon == false)
         {
             flashlight.enabled = false;
