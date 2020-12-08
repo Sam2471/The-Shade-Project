@@ -8,7 +8,7 @@ public class Procesmenu1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
+        Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         StartCoroutine(Countdown());
         display.SetActive(false);
