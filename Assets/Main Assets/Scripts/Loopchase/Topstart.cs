@@ -11,6 +11,7 @@ public class Topstart : MonoBehaviour
     public GameObject triggerbox;
     public GameObject lightB;
     public GameObject lightC;
+    public Light lightF;
     public GameObject disablebox;
 
     public AudioSource smashsource;
@@ -22,10 +23,7 @@ public class Topstart : MonoBehaviour
    
     private void Start()
     {
-        triggerbox.SetActive(true);
-        disablebox.SetActive(true);
-        lightB.SetActive(true);
-        lightC.SetActive(true);
+       
     }
 
     private void Update()
@@ -39,6 +37,7 @@ public class Topstart : MonoBehaviour
            lightB.SetActive(true);
            lightC.SetActive(true);
            flash.canflick = false;
+            lightF.intensity = 1f;
         } 
     }
 
@@ -61,7 +60,7 @@ public class Topstart : MonoBehaviour
 
     IEnumerator Lightrepair()
     {              
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         yield return hasbroken = true;
         yield return testyo = true;
         

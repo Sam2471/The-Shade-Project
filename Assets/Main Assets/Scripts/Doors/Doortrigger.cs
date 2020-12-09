@@ -39,6 +39,9 @@ public class Doortrigger : MonoBehaviour
             }
 
         }
-
+        else
+        {
+            door.canopen = false;
+        }
     }
 }

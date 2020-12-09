@@ -5408,6 +5408,7 @@ MonoBehaviour:
   triggerbox: {fileID: 344565272}
   lightB: {fileID: 1960789417}
   lightC: {fileID: 2086624682}
+  lightF: {fileID: 666952567}
   disablebox: {fileID: 805624132}
   smashsource: {fileID: 344565278}
   approchS: {fileID: 2101821894}
@@ -6011,7 +6012,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -9705,9 +9706,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.8
+  m_Intensity: 1.5
   m_Range: 110
-  m_SpotAngle: 85
+  m_SpotAngle: 85.6
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -9762,7 +9763,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558670655}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -48.360947, y: 68.36382, z: -29.559608}
+  m_LocalPosition: {x: -48.360947, y: 69.629, z: -29.559608}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1700783958}
@@ -11950,7 +11951,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 70
   m_SpotAngle: 40
   m_InnerSpotAngle: 3
@@ -12013,7 +12014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   light: {fileID: 666952567}
   minIntensity: 0
-  maxIntensity: 0.7
+  maxIntensity: 1.2
   smoothing: 5
 --- !u!1 &669993245
 GameObject:
@@ -12729,6 +12730,7 @@ GameObject:
   - component: {fileID: 717963081}
   - component: {fileID: 717963080}
   - component: {fileID: 717963084}
+  - component: {fileID: 717963085}
   m_Layer: 0
   m_Name: EndGame
   m_TagString: Untagged
@@ -12823,6 +12825,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 905050728}
+--- !u!114 &717963085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717963079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8074271a9bcc75f40870bb2c6aef70c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &735519090
 GameObject:
   m_ObjectHideFlags: 0
@@ -17176,6 +17190,7 @@ MonoBehaviour:
   triggerbox: {fileID: 1024763358}
   lightB: {fileID: 1206142664}
   lightC: {fileID: 134211434}
+  lightF: {fileID: 666952567}
   disablebox: {fileID: 1923970864}
   smashsource: {fileID: 1024763364}
   approchS: {fileID: 375408291}
@@ -29605,7 +29620,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f1e3192ca07778d47b066eb64c895087, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.9
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -32778,7 +32793,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
